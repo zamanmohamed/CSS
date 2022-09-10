@@ -17,7 +17,8 @@ Default: 1
 - Shades: 
 - Accents:
 - Greys
-
+#555
+#333
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
@@ -49,16 +50,89 @@ body {
   color: #555;
 }
 
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
 .hero {
+  max-width: 120rem;
   /* convert as ac container */
   margin: 0 auto;
-  max-width: 130rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  /* color: #45260a; */
+  /* color: #343a40; */
+  letter-spacing: -0.5px;
+  margin-bottom: 3.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #e67e22;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+
+  /* hover එකෙ background-color එක 1s ඇතුලත වෙනස්වෙ */
+  transition: background-color 1s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  background-color: red;
+}
+
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+
+  /* border: 3px solid #fff; */
+  /* ===============NOTE=================== */
+  /* Trick to add border inside */
+  box-shadow: inset 0 0 0 3px #fff;
+
+  /* ===============NOTE=================== */
 }
 
 .hero-img {
   /* කවදාවත් image වල height width ලබා නොදිය යුතුය.
      එය යම් කිසි රාමුවකට(<div>) එකකට සිරකරගත යුතුය */
   width: 100%;
+}
+
+/* මෙ වගෙ margin padding වලට hepler class භාවිතා කිරීමෙදී 
+!important යෙදීමට වගබලාගන්න*/
+.margin-right-sm {
+  margin-right: 1.6rem !important;
 }
