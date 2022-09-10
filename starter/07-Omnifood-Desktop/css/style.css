@@ -35,6 +35,13 @@ Default: 1
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
 body {
   font-family: sans-serif;
   line-height: 1;
@@ -42,8 +49,16 @@ body {
   color: #555;
 }
 
-.test {
-  max-width: 1000px;
-  background-color: red;
-  padding: 100px;
+.hero {
+  /* convert as ac container */
+  margin: 0 auto;
+  max-width: 130rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+  /* කවදාවත් image වල height width ලබා නොදිය යුතුය.
+     එය යම් කිසි රාමුවකට(<div>) එකකට සිරකරගත යුතුය */
+  width: 100%;
 }
