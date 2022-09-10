@@ -43,7 +43,7 @@ body {
 }
 
 .test {
-  width: 1000px;
+  max-width: 1000px;
   background-color: red;
   padding: 100px;
 }
