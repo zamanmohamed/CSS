@@ -4,11 +4,14 @@
 
 - Font weights
 Default: 400
-
+Medium: 500
+Semi-Bolod: 600
+Bold: 700
 
 - Line heights
 Default: 1
-
+Small: 1.05
+paragraph default: 1.6
 
 --- 02 COLORS
 
@@ -22,7 +25,7 @@ Default: 1
 --- 05 SHADOWS
 
 --- 06 BORDER-RADIUS
-
+Default: 9px
 --- 07 WHITESPACE
 
 - Spacing system (px)
@@ -131,6 +134,50 @@ body {
 .logo {
   height: 2.2rem;
 }
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.main-nav-list {
+  list-style: none;
+  align-items: center;
+  display: flex;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  /* display: inline-block; */
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+/*<element class="main-nav-link nav-cta" :link> */
+/* පහත css එක තෘප්ත වීමට main-nav-link nav-cta 
+ආකාරයෙ class  එකක් තිබිය යුතුය*/
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.6rem 2.4rem;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+
 /**************************/
 /* HERO SECTION */
 /**************************/
