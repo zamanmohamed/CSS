@@ -56,6 +56,29 @@ body {
 /**************************/
 /* GENRAL REUSABLE COMPONENTS */
 /**************************/
+
+.container {
+  /* 1440px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid--2-cols {
+  /*  grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--4-cols {
+  /*  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .heading-primary {
   font-size: 5.2rem;
   font-weight: 700;
@@ -188,7 +211,7 @@ body {
 }
 
 .hero {
-  max-width: 120rem;
+  max-width: 130rem;
   /* convert as ac container */
   margin: 0 auto;
 
@@ -247,32 +270,4 @@ body {
 .section-how {
   padding: 9.6rem 0;
   background-color: orangered;
-}
-
-.container {
-  /* 1440px */
-  max-width: 120rem;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.grid {
-  display: grid;
-  gap: 9.6rem;
-}
-
-.grid--2-cols {
-  /*  grid-template-columns: 1fr 1fr; */
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--4-cols {
-  /*  grid-template-columns: 1fr 1fr 1fr 1fr; */
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.section-how div div {
-  padding: 100px;
-  font-size: 50px;
-  background-color: #333;
 }
