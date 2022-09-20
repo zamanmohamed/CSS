@@ -72,13 +72,23 @@ body {
 
 .grid {
   display: grid;
+  /**************************/
+  /************NOTE**********/
+  /* gap row හා column වලට වෙන වෙනම ලබාදීම */
   row-gap: 9.6rem;
   column-gap: 6.2rem;
+  /**************************/
+  /************NOTE**********/
 }
 
 .grid--2-cols {
   /*  grid-template-columns: 1fr 1fr; */
   grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  /*  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid--4-cols {
