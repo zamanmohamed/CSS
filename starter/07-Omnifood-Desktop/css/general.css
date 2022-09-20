@@ -146,9 +146,14 @@ body {
   font-weight: 600;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
-
+  /**************************/
+  /************NOTE**********/
   /* hover එකෙ background-color එක 1s ඇතුලත වෙනස්වෙ */
-  transition: background-color 1s;
+  /* transition: background-color 1s; */
+
+  /**************************/
+  /************NOTE**********/
+  transition: all 1s;
 }
 
 .btn--full:link,
@@ -181,10 +186,47 @@ body {
   /* ===============NOTE=================== */
 }
 
-/* මෙ වගෙ margin padding වලට hepler class භාවිතා කිරීමෙදී 
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #cf711f;
+  text-decoration: none;
+  /* ===============NOTE=================== */
+  /* currentColor */
+  border-bottom: 1px solid currentColor;
+  /* ===============NOTE=================== */
+
+  padding-bottom: 2px;
+
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link:active {
+  color: #e67e22;
+
+  /* ===============NOTE=================== */
+  /* hover වන විට border එක remove කිරීමට අවශ්‍ය නම් 
+  border-bottom:none ලබා නොදිය යුතුය එ වෙනුවට පහත දක්වා ඇති 
+  ආකාරයට border-bottom එක transparent කල යුතුය*/
+  border-bottom: 1px solid transparent;
+  /* ===============NOTE=================== */
+}
+
+/* HELPER/SETTINGS CLASSES */
+
+/* මෙ වගෙ margin වලට hepler class භාවිතා කිරීමෙදී 
   !important යෙදීමට වගබලාගන්න*/
 .margin-right-sm {
   margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center !important;
 }
 
 strong {
