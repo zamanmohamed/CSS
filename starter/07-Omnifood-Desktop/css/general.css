@@ -72,15 +72,30 @@ body {
 
 .grid {
   display: grid;
-  /**************************/
-  /************NOTE**********/
+  /************START**********/
+  /************NOTE***********/
   /* gap row හා column වලට වෙන වෙනම ලබාදීම */
   row-gap: 9.6rem;
   column-gap: 6.2rem;
-  /**************************/
+  /************END***********/
   /************NOTE**********/
+
+  margin-bottom: 9.6rem;
 }
 
+/************START**********/
+/************NOTE***********/
+
+/* .grid:last-child {
+  margin-bottom: 0;
+} */
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+/************END***********/
+/************NOTE**********/
 .grid--2-cols {
   /*  grid-template-columns: 1fr 1fr; */
   grid-template-columns: repeat(2, 1fr);
