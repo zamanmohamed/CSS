@@ -153,6 +153,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -166,9 +167,14 @@ body {
   /* hover එකෙ background-color එක 1s ඇතුලත වෙනස්වෙ */
   /* transition: background-color 1s; */
 
+  transition: all 1s;
   /**************************/
   /************NOTE**********/
-  transition: all 1s;
+
+  /* Only necessary for .btn */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -199,6 +205,18 @@ body {
   box-shadow: inset 0 0 0 3px #fff;
 
   /* ===============NOTE=================== */
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -247,6 +265,15 @@ body {
   height: 3rem;
   color: #e67e22;
 }
+
+/* ===============NOTE=================== */
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+/* ===============NOTE=================== */
 
 /* HELPER/SETTINGS CLASSES */
 
