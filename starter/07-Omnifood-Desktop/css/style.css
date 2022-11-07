@@ -6,6 +6,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fdf2e9;
+  position: relative;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -59,6 +60,25 @@
   background-color: #cf711f;
 }
 
+/*-------------- MOBILE------------------ */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+/*-------------- MOBILE------------------ */
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 /**************************/
 /* HERO SECTION */
 /**************************/
@@ -590,7 +610,7 @@
   /***********START**********/
   /************NOTE**********/
   /* අපි normal body වලට ලබාදුන් font,colorම 
-  input field වලටත් inherit කිරීම මෙහිදී සිදුවැ */
+  input field වලටත් inherit කිරීම මෙහිදී සිදුවෙ */
   font-family: inherit;
   color: inherit;
 

@@ -122,10 +122,11 @@
     margin-top: 1.2rem;
   }
 
-  /* MOBILE NAVIGATION */
+  /*-------------------------- MOBILE NAVIGATION-------------------------- */
   .btn-mobile-nav {
     display: block;
   }
+  /*-------------------------- MOBILE NAVIGATION-------------------------- */
 
   .main-nav {
     background-color: rgba(255, 255, 255, 0.97);
@@ -149,12 +150,15 @@
     opacity: 0;
 
     /* 2) Make it unaccessible to mouse and keyboard */
+    /* click කල විට අදාල class එක තුල ඇති link  වැඩ නොකිරීමට */
     pointer-events: none;
 
     /* 3) Hide it from screen readers */
+    /* nav-open class එක නැති අවස්තාවෙ visibility: hidden කිරීම */
     visibility: hidden;
   }
 
+  /* nav-open class එක ඇති අවස්තාවෙ visibility: visible කිරීම */
   .nav-open .main-nav {
     opacity: 1;
     pointer-events: auto;
